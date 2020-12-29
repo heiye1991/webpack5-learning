@@ -6,6 +6,7 @@
   "scripts": {
     "webpack": "webpack --config ./entry-output/config/webpack.config.js",
     "webpack2": "webpack --config ./pack-resources/config/webpack.config.js",
+    "webpack3": "webpack --config ./styles-extract/config/webpack.config.js",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
@@ -38,6 +39,7 @@
     "file-loader": "^6.2.0",
     "less": "^4.0.0",
     "less-loader": "^7.2.0",
+    "mini-css-extract-plugin": "^1.3.3",
     "node-sass": "^5.0.0",
     "postcss-loader": "^4.1.0",
     "sass-loader": "^10.1.0",
