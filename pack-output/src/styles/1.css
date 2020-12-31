@@ -1,0 +1,18 @@
+div {
+  height: 120px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e02bdb;
+}
+.div1 {
+  background: url('../assets/1.jpg') no-repeat center center;
+  background-size: contain;
+}
+.div5 {
+  background: url('../assets/5.png') no-repeat center center;
+  background-size: contain;
+}
+.div6 {
+  background: url('../assets/6.svg') no-repeat center center;
+  background-size: contain;
+}

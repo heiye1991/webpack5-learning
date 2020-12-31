@@ -1,5 +1,7 @@
 const path = require('path')
 
+const StyleLoader = ['style-loader', 'css-loader', 'postcss-loader']
+
 module.exports = {
   mode: 'development',
   entry: path.join(__dirname, '../src/index.js'),
@@ -25,22 +27,22 @@ module.exports = {
       // css打包
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader']
+        use: StyleLoader
       },
       // less打包
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
+        use: StyleLoader.concat('less-loader')
       },
       // sass/scss 打包
       {
         test: /\.(scss|sass)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: StyleLoader.concat('sass-loader')
       },
       // stylus打包
       {
         test: /\.styl$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
+        use: StyleLoader.concat('stylus-loader')
       },
       // 图片打包
       {
