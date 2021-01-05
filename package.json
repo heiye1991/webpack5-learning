@@ -8,8 +8,8 @@
     "webpack2": "webpack --config ./pack-resources/config/webpack.config.js",
     "webpack3:dev": "cross-env NODE_ENV=development webpack --config ./styles-extract/config/webpack.config.js",
     "webpack3:build": "cross-env NODE_ENV=production webpack --config ./styles-extract/config/webpack.config.js",
-    "webpack4:dev": "cross-env NODE_ENV=development webpack --config ./pack-output/config/webpack.config.js",
-    "webpack4:build": "cross-env NODE_ENV=production webpack --config ./pack-output/config/webpack.config.js",
+    "webpack4:dev": "cross-env NODE_ENV=development webpack --config ./pack-output/config/webpack.config.js --watch",
+    "webpack4:build": "cross-env NODE_ENV=production webpack --config ./pack-output/config/webpack.config.js --watch",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },

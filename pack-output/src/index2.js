@@ -1,4 +1,4 @@
 import './styles/4.styl'
 
-const app = '2'
+const app = 'webpack --watch'
 export default app

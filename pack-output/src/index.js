@@ -7,7 +7,7 @@ import app from './index2'
 
 console.log('webpack5 learning')
 
-var total = sum(1, 2)
+var total = sum(21, 22)
 console.log(total)
 
 console.log(app)
